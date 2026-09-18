@@ -6,8 +6,8 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from collections import defaultdict
 
-KEEP_HOURS = 6
-BATCH_SIZE = 100
+KEEP_DAYS = 30
+BATCH_SIZE = 50
 ALL_SEPARATE_FILES = True
 
 
@@ -404,7 +404,7 @@ def is_compatible(browser, os_family):
     return True
 
 
-def cleanup_old_snapshots(root_dir, keep_hours=6):
+def cleanup_old_snapshots(root_dir, keep_days=30):
     if not root_dir.exists():
         return
 
@@ -426,7 +426,7 @@ def cleanup_old_snapshots(root_dir, keep_hours=6):
             continue
 
     snapshots.sort(key=lambda x: x[0])
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=keep_hours)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=keep_days)
 
     removed = []
     for dt, folder in snapshots:
@@ -437,9 +437,9 @@ def cleanup_old_snapshots(root_dir, keep_hours=6):
     if removed:
         print(f"Removed old snapshots: {len(removed)}")
     else:
-        print(f"Nothing to remove (limit: {keep_hours} hours)")
+        print(f"Nothing to remove (limit: {keep_days} days)")
 
-    max_snapshots = keep_hours * 12 + 20
+    max_snapshots = keep_days * 24 * 12 + 100
     remaining = [(dt, f) for dt, f in snapshots if f.name not in removed]
     if len(remaining) > max_snapshots:
         remaining.sort(key=lambda x: x[0])
@@ -509,8 +509,8 @@ def main():
 
     root_dir = Path(".")
 
-    print(f"Retention: {KEEP_HOURS} hours")
-    cleanup_old_snapshots(root_dir, keep_hours=KEEP_HOURS)
+    print(f"Retention: {KEEP_DAYS} days")
+    cleanup_old_snapshots(root_dir, keep_days=KEEP_DAYS)
 
     run_dir = root_dir / timestamp
     run_dir.mkdir(parents=True, exist_ok=True)
@@ -532,13 +532,13 @@ def main():
 
             pop = browser_info["popularity"]
             if pop >= 50:
-                count = 300
-            elif pop >= 10:
-                count = 200
-            elif pop >= 3:
-                count = 150
-            else:
                 count = 100
+            elif pop >= 10:
+                count = 50
+            elif pop >= 3:
+                count = 30
+            else:
+                count = 20
 
             ua_list = []
             seen = set()
