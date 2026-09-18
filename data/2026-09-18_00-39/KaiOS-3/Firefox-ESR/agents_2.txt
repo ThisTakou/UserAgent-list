@@ -1,0 +1,1 @@
+Mozilla/5.0 (Mobile; KaiOS 3.0; rv:115.0) Gecko/20100101 Firefox/115.0

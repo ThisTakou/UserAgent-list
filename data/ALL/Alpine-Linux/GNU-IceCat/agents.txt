@@ -1,0 +1,2 @@
+Mozilla/5.0 (X11; Alpine Linux; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Mozilla/5.0 (X11; Alpine Linux; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0

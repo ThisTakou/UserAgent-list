@@ -1,0 +1,2 @@
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.8762.166 Safari/537.36
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.5385.123 Safari/537.36

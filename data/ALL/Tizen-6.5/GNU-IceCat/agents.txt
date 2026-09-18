@@ -1,0 +1,2 @@
+Mozilla/5.0 (Linux; Tizen 6.5; rv:128.0) Gecko/20100101 Firefox/128.0
+Mozilla/5.0 (Linux; Tizen 6.5; rv:127.0) Gecko/20100101 Firefox/127.0

@@ -1,0 +1,1 @@
+Mozilla/5.0 (X11; SunOS sun4u) AppleWebKit/537.36 (KHTML, like Gecko) Figma/100.0.0 Chrome/123.0.0.0 Electron/100.0.0 Safari/537.36

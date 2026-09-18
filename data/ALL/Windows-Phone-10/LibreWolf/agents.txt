@@ -1,0 +1,2 @@
+Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; rv:132.0) Gecko/20100101 Firefox/132.0
+Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; rv:129.0) Gecko/20100101 Firefox/129.0

@@ -1,0 +1,1 @@
+Mozilla/5.0 (X11; Parrot; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0

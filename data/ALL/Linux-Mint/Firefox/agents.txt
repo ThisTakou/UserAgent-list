@@ -1,0 +1,3 @@
+Mozilla/5.0 (X11; Linux Mint; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
+Mozilla/5.0 (X11; Linux Mint; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0
+Mozilla/5.0 (X11; Linux Mint; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0

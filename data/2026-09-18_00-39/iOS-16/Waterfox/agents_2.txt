@@ -1,0 +1,1 @@
+Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X; rv:6.0) Gecko/20100101 Firefox/6.0

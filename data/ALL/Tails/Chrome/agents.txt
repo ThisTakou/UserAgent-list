@@ -1,0 +1,8 @@
+Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.9746.198 Safari/537.36
+Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.2452.138 Safari/537.36
+Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.3761.84 Safari/537.36
+Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.7614.190 Safari/537.36
+Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.4761.112 Safari/537.36
+Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.3852.200 Safari/537.36
+Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.1736.96 Safari/537.36
+Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.7008.131 Safari/537.36
