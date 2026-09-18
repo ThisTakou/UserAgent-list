@@ -7,7 +7,7 @@ from pathlib import Path
 from collections import defaultdict
 
 KEEP_HOURS = 24
-BATCH_SIZE = 1
+BATCH_SIZE = 10000
 ALL_SEPARATE_FILES = True
 
 
