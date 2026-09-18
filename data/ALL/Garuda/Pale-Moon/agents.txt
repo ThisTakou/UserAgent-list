@@ -1,0 +1,1 @@
+Mozilla/5.0 (X11; Garuda; Linux x86_64; rv:32.0) Gecko/20100101 Pale-Moon/32.0
