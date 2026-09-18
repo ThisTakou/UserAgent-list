@@ -1,2 +1,3 @@
 Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X; rv:128.0) Gecko/20100101 Firefox/128.0
 Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X; rv:126.0) Gecko/20100101 Firefox/126.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X; rv:127.0) Gecko/20100101 Firefox/127.0

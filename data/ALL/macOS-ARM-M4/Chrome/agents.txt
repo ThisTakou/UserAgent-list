@@ -14,3 +14,11 @@ Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gec
 Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6936.126 Safari/537.36
 Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.7744.60 Safari/537.36
 Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.4557.117 Safari/537.36
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.4748.185 Safari/537.36
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.7264.144 Safari/537.36
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.9237.57 Safari/537.36
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.3275.135 Safari/537.36
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6581.128 Safari/537.36
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.5175.141 Safari/537.36
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.1046.157 Safari/537.36
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.5979.143 Safari/537.36

@@ -2,3 +2,4 @@ Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) H
 Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.0.0 Safari/537.36
 Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/122.0.0.0 Safari/537.36
 Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.0.0 Safari/537.36
+Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.0.0 Safari/537.36

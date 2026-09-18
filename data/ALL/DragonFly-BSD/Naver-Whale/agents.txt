@@ -2,3 +2,5 @@ Mozilla/5.0 (X11; DragonFly amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
 Mozilla/5.0 (X11; DragonFly amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.2909.163 Safari/537.36
 Mozilla/5.0 (X11; DragonFly amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.9406.88 Safari/537.36
 Mozilla/5.0 (X11; DragonFly amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.9831.172 Safari/537.36
+Mozilla/5.0 (X11; DragonFly amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.1609.61 Safari/537.36
+Mozilla/5.0 (X11; DragonFly amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.9841.148 Safari/537.36

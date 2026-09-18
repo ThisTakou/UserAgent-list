@@ -2,3 +2,5 @@ Mozilla/5.0 (X11; Garuda; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) C
 Mozilla/5.0 (X11; Garuda; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.1333.200 Safari/537.36
 Mozilla/5.0 (X11; Garuda; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.7012.124 Safari/537.36
 Mozilla/5.0 (X11; Garuda; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.1870.97 Safari/537.36
+Mozilla/5.0 (X11; Garuda; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.2242.136 Safari/537.36
+Mozilla/5.0 (X11; Garuda; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.7171.172 Safari/537.36

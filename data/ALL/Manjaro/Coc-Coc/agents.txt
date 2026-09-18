@@ -2,3 +2,5 @@ Mozilla/5.0 (X11; Manjaro; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) 
 Mozilla/5.0 (X11; Manjaro; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.7219.75 Safari/537.36
 Mozilla/5.0 (X11; Manjaro; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6952.86 Safari/537.36
 Mozilla/5.0 (X11; Manjaro; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.7653.82 Safari/537.36
+Mozilla/5.0 (X11; Manjaro; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.1106.68 Safari/537.36
+Mozilla/5.0 (X11; Manjaro; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.8701.183 Safari/537.36

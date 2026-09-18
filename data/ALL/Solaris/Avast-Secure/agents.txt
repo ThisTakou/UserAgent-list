@@ -2,3 +2,5 @@ Mozilla/5.0 (X11; SunOS sun4u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130
 Mozilla/5.0 (X11; SunOS sun4u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.7362.155 Safari/537.36
 Mozilla/5.0 (X11; SunOS sun4u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.7797.149 Safari/537.36
 Mozilla/5.0 (X11; SunOS sun4u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.7482.145 Safari/537.36
+Mozilla/5.0 (X11; SunOS sun4u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.8582.126 Safari/537.36
+Mozilla/5.0 (X11; SunOS sun4u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.1846.91 Safari/537.36

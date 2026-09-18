@@ -2,3 +2,5 @@ Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Ge
 Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.9008.145 Safari/537.36
 Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.3013.70 Safari/537.36
 Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.9075.142 Safari/537.36
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.2123.96 Safari/537.36
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.4966.195 Safari/537.36

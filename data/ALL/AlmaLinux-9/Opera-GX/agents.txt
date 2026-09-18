@@ -2,3 +2,5 @@ Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0
 Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/115.0.0.0
 Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/115.0.0.0
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/116.0.0.0
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/116.0.0.0

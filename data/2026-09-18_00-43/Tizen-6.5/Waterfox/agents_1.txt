@@ -1,0 +1,1 @@
+Mozilla/5.0 (Linux; Tizen 6.5; rv:5.0) Gecko/20100101 Firefox/5.0

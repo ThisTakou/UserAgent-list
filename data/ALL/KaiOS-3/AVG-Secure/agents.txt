@@ -2,3 +2,5 @@ Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/12
 Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6879.198 Safari/537.36
 Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.4726.65 Safari/537.36
 Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.1861.54 Safari/537.36
+Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.5162.55 Safari/537.36
+Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.5577.130 Safari/537.36

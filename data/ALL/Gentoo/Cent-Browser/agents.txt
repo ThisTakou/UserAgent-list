@@ -2,3 +2,5 @@ Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) C
 Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.5167.137 Safari/537.36
 Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6373.108 Safari/537.36
 Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.8742.94 Safari/537.36
+Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.4926.60 Safari/537.36
+Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.7278.92 Safari/537.36

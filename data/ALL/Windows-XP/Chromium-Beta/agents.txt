@@ -2,3 +2,5 @@ Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/
 Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.1426.75 Safari/537.36
 Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.7787.148 Safari/537.36
 Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.8328.55 Safari/537.36
+Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.4705.116 Safari/537.36
+Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.7523.102 Safari/537.36

@@ -2,3 +2,5 @@ Mozilla/5.0 (X11; Qubes; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ch
 Mozilla/5.0 (X11; Qubes; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.3262.188 Safari/537.36
 Mozilla/5.0 (X11; Qubes; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.3257.135 Safari/537.36
 Mozilla/5.0 (X11; Qubes; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6438.56 Safari/537.36
+Mozilla/5.0 (X11; Qubes; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.3111.121 Safari/537.36
+Mozilla/5.0 (X11; Qubes; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.5986.94 Safari/537.36

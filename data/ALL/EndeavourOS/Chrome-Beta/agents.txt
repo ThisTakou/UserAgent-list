@@ -2,3 +2,5 @@ Mozilla/5.0 (X11; EndeavourOS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gec
 Mozilla/5.0 (X11; EndeavourOS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.7753.183 Safari/537.36
 Mozilla/5.0 (X11; EndeavourOS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.4003.181 Safari/537.36
 Mozilla/5.0 (X11; EndeavourOS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.5747.103 Safari/537.36
+Mozilla/5.0 (X11; EndeavourOS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.3279.132 Safari/537.36
+Mozilla/5.0 (X11; EndeavourOS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.7558.179 Safari/537.36

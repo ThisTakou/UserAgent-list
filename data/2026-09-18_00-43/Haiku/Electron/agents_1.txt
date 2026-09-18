@@ -1,0 +1,1 @@
+Mozilla/5.0 (X11; Haiku x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Electron/33.0.0 Chrome/126.0.0.0 Electron/33.0.0 Safari/537.36

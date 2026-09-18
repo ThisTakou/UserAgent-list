@@ -2,3 +2,5 @@ Mozilla/5.0 (X11; Linux Mint; Linux x86_64) AppleWebKit/537.36 (KHTML, like Geck
 Mozilla/5.0 (X11; Linux Mint; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.5587.138 Safari/537.36
 Mozilla/5.0 (X11; Linux Mint; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.9501.173 Safari/537.36
 Mozilla/5.0 (X11; Linux Mint; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.8284.170 Safari/537.36
+Mozilla/5.0 (X11; Linux Mint; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.1701.125 Safari/537.36
+Mozilla/5.0 (X11; Linux Mint; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.1940.77 Safari/537.36
