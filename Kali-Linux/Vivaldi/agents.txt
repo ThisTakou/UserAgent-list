@@ -102,3 +102,4 @@ Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Geck
 Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Vivaldi/5.0
 Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Vivaldi/5.0
 Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Vivaldi/5.0
+Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Vivaldi/7.0
