@@ -1,2 +1,0 @@
-Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0; rv:31.0) Gecko/20100101 Pale-Moon/31.0
-Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0; rv:33.0) Gecko/20100101 Pale-Moon/33.0

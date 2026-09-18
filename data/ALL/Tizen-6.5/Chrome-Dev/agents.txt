@@ -1,2 +1,0 @@
-Mozilla/5.0 (Linux; Tizen 6.5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.2975.151 Safari/537.36
-Mozilla/5.0 (Linux; Tizen 6.5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.4435.172 Safari/537.36

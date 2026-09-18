@@ -1,2 +1,0 @@
-Mozilla/5.0 (Windows NT 10.0; ARM64; rv:128.0) Gecko/20100101 Firefox/128.0
-Mozilla/5.0 (Windows NT 10.0; ARM64; rv:130.0) Gecko/20100101 Firefox/130.0

@@ -1,2 +1,0 @@
-Mozilla/5.0 (X11; Haiku x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.7140.88 Safari/537.36
-Mozilla/5.0 (X11; Haiku x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.1836.132 Safari/537.36

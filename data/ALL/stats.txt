@@ -1,4 +1,0 @@
-Last updated: 2026-09-18T01:00:41.913822+00:00
-Total unique UA: 13206
-Added this run: 5692
-OS/Browser combos: 12215

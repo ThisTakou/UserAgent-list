@@ -1,2 +1,0 @@
-Mozilla/5.0 (X11; openSUSE; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.2024.127 Safari/537.36
-Mozilla/5.0 (X11; openSUSE; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.9741.186 Safari/537.36

@@ -1,2 +1,0 @@
-Mozilla/5.0 (X11; Fuchsia) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.7539.126 Safari/537.36
-Mozilla/5.0 (X11; Fuchsia) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.1505.77 Safari/537.36

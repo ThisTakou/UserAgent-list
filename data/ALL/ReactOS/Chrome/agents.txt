@@ -1,6 +1,0 @@
-Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.2627.166 Safari/537.36
-Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6490.51 Safari/537.36
-Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.7665.162 Safari/537.36
-Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.1916.117 Safari/537.36
-Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.9110.134 Safari/537.36
-Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.5799.134 Safari/537.36

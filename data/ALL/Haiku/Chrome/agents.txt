@@ -1,6 +1,0 @@
-Mozilla/5.0 (X11; Haiku x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.7744.55 Safari/537.36
-Mozilla/5.0 (X11; Haiku x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.7656.117 Safari/537.36
-Mozilla/5.0 (X11; Haiku x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.8653.88 Safari/537.36
-Mozilla/5.0 (X11; Haiku x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.1188.128 Safari/537.36
-Mozilla/5.0 (X11; Haiku x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.2431.153 Safari/537.36
-Mozilla/5.0 (X11; Haiku x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.9684.170 Safari/537.36

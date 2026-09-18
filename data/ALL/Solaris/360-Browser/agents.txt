@@ -1,2 +1,0 @@
-Mozilla/5.0 (X11; SunOS sun4u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6840.134 Safari/537.36
-Mozilla/5.0 (X11; SunOS sun4u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.2340.71 Safari/537.36

@@ -1,2 +1,0 @@
-Mozilla/5.0 (X11; Rocky Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6368.179 Safari/537.36
-Mozilla/5.0 (X11; Rocky Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.5465.190 Safari/537.36

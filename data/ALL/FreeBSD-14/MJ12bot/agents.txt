@@ -1,1 +1,0 @@
-Mozilla/5.0 (compatible; MJ12bot/v1.0; http://mj12bot.com/)

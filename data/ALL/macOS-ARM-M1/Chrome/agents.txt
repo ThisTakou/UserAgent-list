@@ -1,6 +1,0 @@
-Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.1601.132 Safari/537.36
-Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.3532.106 Safari/537.36
-Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.5377.74 Safari/537.36
-Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.1494.169 Safari/537.36
-Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6228.146 Safari/537.36
-Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.7015.144 Safari/537.36

@@ -1,2 +1,0 @@
-Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6991.82 Safari/537.36
-Mozilla/5.0 (X11; Tails; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.1944.97 Safari/537.36

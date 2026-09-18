@@ -1,2 +1,0 @@
-Mozilla/5.0 (Windows NT 5.2; ReactOS; rv:129.0) Gecko/20100101 Firefox/129.0
-Mozilla/5.0 (Windows NT 5.2; ReactOS; rv:125.0) Gecko/20100101 Firefox/125.0

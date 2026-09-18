@@ -1,2 +1,0 @@
-Mozilla/5.0 (Linux; Sailfish; rv:128.0) Gecko/20100101 Firefox/128.0
-Mozilla/5.0 (Linux; Sailfish; rv:130.0) Gecko/20100101 Firefox/130.0

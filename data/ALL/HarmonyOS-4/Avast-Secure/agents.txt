@@ -1,2 +1,0 @@
-Mozilla/5.0 (Linux; HarmonyOS 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.1241.172 Safari/537.36
-Mozilla/5.0 (Linux; HarmonyOS 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.1933.128 Safari/537.36
