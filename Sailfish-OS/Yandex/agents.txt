@@ -112,3 +112,6 @@ Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.
 Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 YaBrowser/25.0 Safari/537.36
 Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 YaBrowser/24.0 Safari/537.36
 Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 YaBrowser/24.0 Safari/537.36
+Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 YaBrowser/25.0 Safari/537.36
+Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 YaBrowser/22.0 Safari/537.36
+Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 YaBrowser/24.0 Safari/537.36

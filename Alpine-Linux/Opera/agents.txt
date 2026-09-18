@@ -133,3 +133,9 @@ Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Ge
 Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/101.0.0.0
 Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 OPR/102.0.0.0
 Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/98.0.0.0
+Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 OPR/114.0.0.0
+Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36 OPR/97.0.0.0
+Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/100.0.0.0
+Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/112.0.0.0
+Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/114.0.0.0
+Mozilla/5.0 (X11; Alpine Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/110.0.0.0
