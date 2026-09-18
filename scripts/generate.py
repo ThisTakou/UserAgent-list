@@ -6,7 +6,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from collections import defaultdict
 
-KEEP_DAYS = 30
+KEEP_HOURS = 24
 BATCH_SIZE = 1
 ALL_SEPARATE_FILES = True
 
@@ -21,131 +21,130 @@ def weighted_versions(latest: int, supported: int):
 
 
 BROWSERS = {
-    "Chrome":              {"engine": "Blink",    "popularity": 65, "versions": weighted_versions(131, 120)},
-    "Chrome-Beta":         {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
-    "Chrome-Canary":       {"engine": "Blink",    "popularity": 1,  "versions": [(133, 1)]},
-    "Chrome-Dev":          {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
-    "Chrome-Headless":     {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
-    "Chromium":            {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(131, 120)},
-    "Chromium-Beta":       {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
-    "Ungoogled-Chromium":  {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
-    "Brave":               {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
-    "Brave-Beta":          {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
-    "Brave-Nightly":       {"engine": "Blink",    "popularity": 1,  "versions": [(133, 1)]},
-    "Edge":                {"engine": "Blink",    "popularity": 5,  "versions": weighted_versions(131, 120)},
-    "Edge-Beta":           {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
-    "Edge-Dev":            {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
-    "Edge-Canary":         {"engine": "Blink",    "popularity": 1,  "versions": [(133, 1)]},
-    "Opera":               {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(116, 105)},
-    "Opera-GX":            {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(116, 105)},
-    "Opera-Air":           {"engine": "Blink",    "popularity": 1,  "versions": [(4, 1), (3, 1)]},
-    "Opera-Beta":          {"engine": "Blink",    "popularity": 1,  "versions": [(117, 1)]},
-    "Opera-Developer":     {"engine": "Blink",    "popularity": 1,  "versions": [(117, 1)]},
-    "Vivaldi":             {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(7, 6)},
-    "Vivaldi-Snapshot":    {"engine": "Blink",    "popularity": 1,  "versions": [(8, 1)]},
-    "Yandex":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(25, 23)},
-    "Yandex-Beta":         {"engine": "Blink",    "popularity": 1,  "versions": [(26, 1)]},
-    "Samsung-Internet":    {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(26, 22)},
-    "Samsung-Internet-Beta":{"engine": "Blink",   "popularity": 1,  "versions": [(27, 1)]},
-    "UC-Browser":          {"engine": "Blink",    "popularity": 1,  "versions": [(13, 3), (12, 1)]},
-    "UC-Browser-Mini":     {"engine": "WebKit",   "popularity": 1,  "versions": [(13, 1)]},
-    "DuckDuckGo":          {"engine": "Blink",    "popularity": 1,  "versions": [(7, 2), (6, 1)]},
-    "Epic":                {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(120, 110)},
-    "Avast-Secure":        {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(125, 120)},
-    "AVG-Secure":          {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(125, 120)},
-    "Comodo-Dragon":       {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 120)},
-    "Torch":               {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(70, 60)},
-    "Slimjet":             {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(40, 35)},
-    "Coc-Coc":             {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(120, 110)},
-    "360-Browser":         {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(16, 14)},
-    "QQ-Browser":          {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(15, 12)},
-    "Maxthon":             {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(8, 6)},
-    "Puffin":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(11, 9)},
-    "Ghost-Browser":       {"engine": "Blink",    "popularity": 1,  "versions": [(2, 1)]},
-    "Iron":                {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 120)},
-    "Iridium":             {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 120)},
-    "Cent-Browser":        {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(6, 4)},
-    "Dissenter":           {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(100, 90)},
-    "Naver-Whale":         {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(5, 3)},
-    "Android-WebView":     {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
-    "Chrome-Mobile":       {"engine": "Blink",    "popularity": 3,  "versions": weighted_versions(131, 120)},
-    "Firefox":             {"engine": "Gecko",    "popularity": 3,  "versions": weighted_versions(134, 128)},
-    "Firefox-Beta":        {"engine": "Gecko",    "popularity": 1,  "versions": [(135, 1)]},
-    "Firefox-Nightly":     {"engine": "Gecko",    "popularity": 1,  "versions": [(136, 1)]},
-    "Firefox-Developer":   {"engine": "Gecko",    "popularity": 1,  "versions": [(134, 1)]},
-    "Firefox-ESR":         {"engine": "Gecko",    "popularity": 1,  "versions": [(128, 3), (115, 1)]},
-    "Firefox-Focus":       {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(130, 125)},
-    "Firefox-Mobile":      {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(134, 128)},
-    "Waterfox":            {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(6, 5)},
-    "Waterfox-Classic":    {"engine": "Gecko",    "popularity": 1,  "versions": [(56, 1)]},
-    "Waterfox-Current":    {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(6, 5)},
-    "LibreWolf":           {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(134, 128)},
-    "GNU-IceCat":          {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(128, 120)},
-    "SeaMonkey":           {"engine": "Gecko",    "popularity": 1,  "versions": [(2, 1)]},
-    "Tor-Browser":         {"engine": "Gecko",    "popularity": 1,  "versions": [(14, 3), (13, 2), (12, 1)]},
-    "Mullvad-Browser":     {"engine": "Gecko",    "popularity": 1,  "versions": [(14, 2), (13, 1)]},
-    "Pale-Moon":           {"engine": "Goanna",   "popularity": 1,  "versions": [(33, 2), (32, 1), (31, 1)]},
-    "Basilisk":            {"engine": "Goanna",   "popularity": 1,  "versions": [(2025, 1), (2024, 1)]},
-    "Comodo-IceDragon":    {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(130, 120)},
-    "Safari":              {"engine": "WebKit",   "popularity": 18, "versions": [(18, 40), (17, 35), (16, 15), (15, 7), (14, 3)]},
-    "Mobile-Safari":       {"engine": "WebKit",   "popularity": 10, "versions": [(18, 40), (17, 35), (16, 15), (15, 7), (14, 3)]},
-    "Safari-TP":           {"engine": "WebKit",   "popularity": 1,  "versions": [(190, 1)]},
-    "WebKit-Nightly":      {"engine": "WebKit",   "popularity": 1,  "versions": [(2025, 1), (2024, 1)]},
-    "iOS-WebView":         {"engine": "WebKit",   "popularity": 1,  "versions": [(18, 3), (17, 2), (16, 1)]},
-    "Epiphany":            {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(46, 44)},
-    "Midori":              {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(11, 10)},
-    "Falkon":              {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(3, 2)},
-    "Konqueror":           {"engine": "KHTML",    "popularity": 1,  "versions": weighted_versions(24, 22)},
-    "Electron":            {"engine": "Electron", "popularity": 1,  "versions": weighted_versions(33, 28)},
-    "Discord":             {"engine": "Electron", "popularity": 1,  "versions": [(1, 1)]},
-    "Slack":               {"engine": "Electron", "popularity": 1,  "versions": [(4, 1)]},
-    "Spotify":             {"engine": "Electron", "popularity": 1,  "versions": [(1, 1)]},
-    "WhatsApp-Desktop":    {"engine": "Electron", "popularity": 1,  "versions": [(2, 1)]},
-    "Telegram-Desktop":    {"engine": "Electron", "popularity": 1,  "versions": [(5, 1), (4, 1)]},
-    "Signal-Desktop":      {"engine": "Electron", "popularity": 1,  "versions": [(7, 1), (6, 1)]},
-    "Postman":             {"engine": "Electron", "popularity": 1,  "versions": [(11, 2), (10, 1)]},
-    "Insomnia":            {"engine": "Electron", "popularity": 1,  "versions": [(2025, 1), (2024, 1)]},
-    "Notion":              {"engine": "Electron", "popularity": 1,  "versions": [(3, 1)]},
-    "Figma":               {"engine": "Electron", "popularity": 1,  "versions": [(100, 1)]},
-    "VSCode":              {"engine": "Electron", "popularity": 1,  "versions": [(1, 1)]},
-    "Googlebot":           {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
-    "Googlebot-Image":     {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
-    "Googlebot-News":      {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
-    "Googlebot-Video":     {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
-    "Bingbot":             {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
-    "YandexBot":           {"engine": "Custom",   "popularity": 1,  "versions": [(3, 1)]},
-    "DuckDuckBot":         {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "Baiduspider":         {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
-    "Sogou":               {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
-    "Exabot":              {"engine": "Custom",   "popularity": 1,  "versions": [(3, 1)]},
-    "Applebot":            {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "facebookexternalhit": {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "Twitterbot":          {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "LinkedInBot":         {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "Slackbot":            {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "TelegramBot":         {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "Discordbot":          {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "Pinterestbot":        {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "AhrefsBot":           {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "SemrushBot":          {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "MJ12bot":             {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
-    "Curl":                {"engine": "CLI",      "popularity": 1,  "versions": [(8, 3), (7, 1)]},
-    "Wget":                {"engine": "CLI",      "popularity": 1,  "versions": [(1, 1)]},
-    "HTTPie":              {"engine": "CLI",      "popularity": 1,  "versions": [(3, 1)]},
-    "Axios":               {"engine": "CLI",      "popularity": 1,  "versions": [(1, 1)]},
-    "Python-requests":     {"engine": "CLI",      "popularity": 1,  "versions": [(2, 1)]},
-    "Go-http-client":      {"engine": "CLI",      "popularity": 1,  "versions": [(2, 1)]},
-    "Java":                {"engine": "CLI",      "popularity": 1,  "versions": [(21, 1)]},
-    "Node-fetch":          {"engine": "CLI",      "popularity": 1,  "versions": [(3, 1)]},
-    "OkHttp":              {"engine": "CLI",      "popularity": 1,  "versions": [(5, 1)]},
-    "PostmanRuntime":      {"engine": "CLI",      "popularity": 1,  "versions": [(7, 1)]},
-    "Google-HTTP-Java":    {"engine": "CLI",      "popularity": 1,  "versions": [(1, 1)]},
-    "libwww-perl":         {"engine": "CLI",      "popularity": 1,  "versions": [(6, 1)]},
-    "Lynx":                {"engine": "Text",     "popularity": 1,  "versions": [(2, 2), (2.9, 1)]},
-    "w3m":                 {"engine": "Text",     "popularity": 1,  "versions": [(0.5, 1)]},
-    "ELinks":              {"engine": "Text",     "popularity": 1,  "versions": [(0.13, 1)]},
-    "Links":               {"engine": "Text",     "popularity": 1,  "versions": [(2.29, 1)]},
-    "wget":                {"engine": "Text",     "popularity": 1,  "versions": [(1, 1)]},
+    "Chrome":               {"engine": "Blink",    "popularity": 65, "versions": weighted_versions(131, 120)},
+    "Chrome-Beta":          {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
+    "Chrome-Canary":        {"engine": "Blink",    "popularity": 1,  "versions": [(133, 1)]},
+    "Chrome-Dev":           {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
+    "Chrome-Headless":      {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
+    "Chromium":             {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(131, 120)},
+    "Chromium-Beta":        {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
+    "Ungoogled-Chromium":   {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
+    "Brave":                {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
+    "Brave-Beta":           {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
+    "Brave-Nightly":        {"engine": "Blink",    "popularity": 1,  "versions": [(133, 1)]},
+    "Edge":                 {"engine": "Blink",    "popularity": 5,  "versions": weighted_versions(131, 120)},
+    "Edge-Beta":            {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
+    "Edge-Dev":             {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
+    "Edge-Canary":          {"engine": "Blink",    "popularity": 1,  "versions": [(133, 1)]},
+    "Opera":                {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(116, 105)},
+    "Opera-GX":             {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(116, 105)},
+    "Opera-Air":            {"engine": "Blink",    "popularity": 1,  "versions": [(4, 1), (3, 1)]},
+    "Opera-Beta":           {"engine": "Blink",    "popularity": 1,  "versions": [(117, 1)]},
+    "Opera-Developer":      {"engine": "Blink",    "popularity": 1,  "versions": [(117, 1)]},
+    "Vivaldi":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(7, 6)},
+    "Vivaldi-Snapshot":     {"engine": "Blink",    "popularity": 1,  "versions": [(8, 1)]},
+    "Yandex":               {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(25, 23)},
+    "Yandex-Beta":          {"engine": "Blink",    "popularity": 1,  "versions": [(26, 1)]},
+    "Samsung-Internet":     {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(26, 22)},
+    "Samsung-Internet-Beta":{"engine": "Blink",    "popularity": 1,  "versions": [(27, 1)]},
+    "UC-Browser":           {"engine": "Blink",    "popularity": 1,  "versions": [(13, 3), (12, 1)]},
+    "UC-Browser-Mini":      {"engine": "WebKit",   "popularity": 1,  "versions": [(13, 1)]},
+    "DuckDuckGo":           {"engine": "Blink",    "popularity": 1,  "versions": [(7, 2), (6, 1)]},
+    "Epic":                 {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(120, 110)},
+    "Avast-Secure":         {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(125, 120)},
+    "AVG-Secure":           {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(125, 120)},
+    "Comodo-Dragon":        {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 120)},
+    "Torch":                {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(70, 60)},
+    "Slimjet":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(40, 35)},
+    "Coc-Coc":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(120, 110)},
+    "360-Browser":          {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(16, 14)},
+    "QQ-Browser":           {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(15, 12)},
+    "Maxthon":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(8, 6)},
+    "Puffin":               {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(11, 9)},
+    "Ghost-Browser":        {"engine": "Blink",    "popularity": 1,  "versions": [(2, 1)]},
+    "Iron":                 {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 120)},
+    "Iridium":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 120)},
+    "Cent-Browser":         {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(6, 4)},
+    "Dissenter":            {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(100, 90)},
+    "Naver-Whale":          {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(5, 3)},
+    "Android-WebView":      {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
+    "Chrome-Mobile":        {"engine": "Blink",    "popularity": 3,  "versions": weighted_versions(131, 120)},
+    "Firefox":              {"engine": "Gecko",    "popularity": 3,  "versions": weighted_versions(134, 128)},
+    "Firefox-Beta":         {"engine": "Gecko",    "popularity": 1,  "versions": [(135, 1)]},
+    "Firefox-Nightly":      {"engine": "Gecko",    "popularity": 1,  "versions": [(136, 1)]},
+    "Firefox-Developer":    {"engine": "Gecko",    "popularity": 1,  "versions": [(134, 1)]},
+    "Firefox-ESR":          {"engine": "Gecko",    "popularity": 1,  "versions": [(128, 3), (115, 1)]},
+    "Firefox-Focus":        {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(130, 125)},
+    "Firefox-Mobile":       {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(134, 128)},
+    "Waterfox":             {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(6, 5)},
+    "Waterfox-Classic":     {"engine": "Gecko",    "popularity": 1,  "versions": [(56, 1)]},
+    "Waterfox-Current":     {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(6, 5)},
+    "LibreWolf":            {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(134, 128)},
+    "GNU-IceCat":           {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(128, 120)},
+    "SeaMonkey":            {"engine": "Gecko",    "popularity": 1,  "versions": [(2, 1)]},
+    "Tor-Browser":          {"engine": "Gecko",    "popularity": 1,  "versions": [(14, 3), (13, 2), (12, 1)]},
+    "Mullvad-Browser":      {"engine": "Gecko",    "popularity": 1,  "versions": [(14, 2), (13, 1)]},
+    "Pale-Moon":            {"engine": "Goanna",   "popularity": 1,  "versions": [(33, 2), (32, 1), (31, 1)]},
+    "Basilisk":             {"engine": "Goanna",   "popularity": 1,  "versions": [(2025, 1), (2024, 1)]},
+    "Comodo-IceDragon":     {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(130, 120)},
+    "Safari":               {"engine": "WebKit",   "popularity": 18, "versions": [(18, 40), (17, 35), (16, 15), (15, 7), (14, 3)]},
+    "Mobile-Safari":        {"engine": "WebKit",   "popularity": 10, "versions": [(18, 40), (17, 35), (16, 15), (15, 7), (14, 3)]},
+    "Safari-TP":            {"engine": "WebKit",   "popularity": 1,  "versions": [(190, 1)]},
+    "WebKit-Nightly":       {"engine": "WebKit",   "popularity": 1,  "versions": [(2025, 1), (2024, 1)]},
+    "iOS-WebView":          {"engine": "WebKit",   "popularity": 1,  "versions": [(18, 3), (17, 2), (16, 1)]},
+    "Epiphany":             {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(46, 44)},
+    "Midori":               {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(11, 10)},
+    "Falkon":               {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(3, 2)},
+    "Konqueror":            {"engine": "KHTML",    "popularity": 1,  "versions": weighted_versions(24, 22)},
+    "Electron":             {"engine": "Electron", "popularity": 1,  "versions": weighted_versions(33, 28)},
+    "Discord":              {"engine": "Electron", "popularity": 1,  "versions": [(1, 1)]},
+    "Slack":                {"engine": "Electron", "popularity": 1,  "versions": [(4, 1)]},
+    "Spotify":              {"engine": "Electron", "popularity": 1,  "versions": [(1, 1)]},
+    "WhatsApp-Desktop":     {"engine": "Electron", "popularity": 1,  "versions": [(2, 1)]},
+    "Telegram-Desktop":     {"engine": "Electron", "popularity": 1,  "versions": [(5, 1), (4, 1)]},
+    "Signal-Desktop":       {"engine": "Electron", "popularity": 1,  "versions": [(7, 1), (6, 1)]},
+    "Postman":              {"engine": "Electron", "popularity": 1,  "versions": [(11, 2), (10, 1)]},
+    "Insomnia":             {"engine": "Electron", "popularity": 1,  "versions": [(2025, 1), (2024, 1)]},
+    "Notion":               {"engine": "Electron", "popularity": 1,  "versions": [(3, 1)]},
+    "Figma":                {"engine": "Electron", "popularity": 1,  "versions": [(100, 1)]},
+    "VSCode":               {"engine": "Electron", "popularity": 1,  "versions": [(1, 1)]},
+    "Googlebot":            {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
+    "Googlebot-Image":      {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
+    "Googlebot-News":       {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
+    "Googlebot-Video":      {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
+    "Bingbot":              {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
+    "YandexBot":            {"engine": "Custom",   "popularity": 1,  "versions": [(3, 1)]},
+    "DuckDuckBot":          {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "Baiduspider":          {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
+    "Sogou":                {"engine": "Custom",   "popularity": 1,  "versions": [(2, 1)]},
+    "Exabot":               {"engine": "Custom",   "popularity": 1,  "versions": [(3, 1)]},
+    "Applebot":             {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "facebookexternalhit":  {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "Twitterbot":           {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "LinkedInBot":          {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "Slackbot":             {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "TelegramBot":          {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "Discordbot":           {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "Pinterestbot":         {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "AhrefsBot":            {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "SemrushBot":           {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "MJ12bot":              {"engine": "Custom",   "popularity": 1,  "versions": [(1, 1)]},
+    "Curl":                 {"engine": "CLI",      "popularity": 1,  "versions": [(8, 3), (7, 1)]},
+    "Wget":                 {"engine": "CLI",      "popularity": 1,  "versions": [(1, 1)]},
+    "HTTPie":               {"engine": "CLI",      "popularity": 1,  "versions": [(3, 1)]},
+    "Axios":                {"engine": "CLI",      "popularity": 1,  "versions": [(1, 1)]},
+    "Python-requests":      {"engine": "CLI",      "popularity": 1,  "versions": [(2, 1)]},
+    "Go-http-client":       {"engine": "CLI",      "popularity": 1,  "versions": [(2, 1)]},
+    "Java":                 {"engine": "CLI",      "popularity": 1,  "versions": [(21, 1)]},
+    "Node-fetch":           {"engine": "CLI",      "popularity": 1,  "versions": [(3, 1)]},
+    "OkHttp":               {"engine": "CLI",      "popularity": 1,  "versions": [(5, 1)]},
+    "PostmanRuntime":       {"engine": "CLI",      "popularity": 1,  "versions": [(7, 1)]},
+    "Google-HTTP-Java":     {"engine": "CLI",      "popularity": 1,  "versions": [(1, 1)]},
+    "libwww-perl":          {"engine": "CLI",      "popularity": 1,  "versions": [(6, 1)]},
+    "Lynx":                 {"engine": "Text",     "popularity": 1,  "versions": [(2, 2), (2.9, 1)]},
+    "w3m":                  {"engine": "Text",     "popularity": 1,  "versions": [(0.5, 1)]},
+    "ELinks":               {"engine": "Text",     "popularity": 1,  "versions": [(0.13, 1)]},
+    "Links":                {"engine": "Text",     "popularity": 1,  "versions": [(2.29, 1)]},
 }
 
 
@@ -405,24 +404,28 @@ def is_compatible(browser, os_family):
     return True
 
 
-def cleanup_old_snapshots(data_dir, keep_days=30):
-    if not data_dir.exists():
+def cleanup_old_snapshots(root_dir, keep_hours=24):
+    if not root_dir.exists():
         return
 
+    skip = {"data", ".github", "scripts", ".git", "requirements.txt", "README.md", ".gitignore"}
+
     snapshots = []
-    for item in data_dir.iterdir():
+    for item in root_dir.iterdir():
         if not item.is_dir():
             continue
-        if item.name == "ALL":
+        if item.name in skip:
+            continue
+        if item.name.startswith("."):
             continue
         try:
-            dt = datetime.strptime(item.name, "%Y-%m-%d_%H-%M").replace(tzinfo=timezone.utc)
+            dt = datetime.strptime(item.name, "%Y-%m-%d_%H-%M-%S").replace(tzinfo=timezone.utc)
             snapshots.append((dt, item))
         except ValueError:
             continue
 
     snapshots.sort(key=lambda x: x[0])
-    cutoff = datetime.now(timezone.utc) - timedelta(days=keep_days)
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=keep_hours)
 
     removed = []
     for dt, folder in snapshots:
@@ -433,9 +436,9 @@ def cleanup_old_snapshots(data_dir, keep_days=30):
     if removed:
         print(f"Removed old snapshots: {len(removed)}")
     else:
-        print(f"Nothing to remove (limit: {keep_days} days)")
+        print(f"Nothing to remove (limit: {keep_hours} hours)")
 
-    max_snapshots = keep_days * 24 + 10
+    max_snapshots = keep_hours * 12 + 20
     remaining = [(dt, f) for dt, f in snapshots if f.name not in removed]
     if len(remaining) > max_snapshots:
         remaining.sort(key=lambda x: x[0])
@@ -445,9 +448,9 @@ def cleanup_old_snapshots(data_dir, keep_days=30):
             print(f"Extra cleanup: {folder.name}")
 
 
-def update_all_folder(data_dir, all_ua):
-    all_dir = data_dir / "ALL"
-    all_dir.mkdir(exist_ok=True)
+def update_all_folder(all_dir, all_ua):
+    all_dir = all_dir / "ALL"
+    all_dir.mkdir(parents=True, exist_ok=True)
 
     if ALL_SEPARATE_FILES:
         for (os_name, browser_name), ua_list in all_ua.items():
@@ -502,15 +505,16 @@ def update_all_folder(data_dir, all_ua):
 
 def main():
     now = datetime.now(timezone.utc)
-    timestamp = now.strftime("%Y-%m-%d_%H-%M")
+    timestamp = now.strftime("%Y-%m-%d_%H-%M-%S")
 
+    root_dir = Path(".")
     data_dir = Path("data")
     data_dir.mkdir(exist_ok=True)
 
-    print(f"Retention: {KEEP_DAYS} days")
-    cleanup_old_snapshots(data_dir, keep_days=KEEP_DAYS)
+    print(f"Retention: {KEEP_HOURS} hours")
+    cleanup_old_snapshots(root_dir, keep_hours=KEEP_HOURS)
 
-    run_dir = data_dir / timestamp
+    run_dir = root_dir / timestamp
     run_dir.mkdir(parents=True, exist_ok=True)
 
     total_ua = 0
@@ -530,13 +534,11 @@ def main():
 
             pop = browser_info["popularity"]
             if pop >= 50:
-                count = 8
-            elif pop >= 10:
-                count = 5
-            elif pop >= 3:
                 count = 3
-            else:
+            elif pop >= 10:
                 count = 2
+            else:
+                count = 1
 
             ua_list = []
             seen = set()
