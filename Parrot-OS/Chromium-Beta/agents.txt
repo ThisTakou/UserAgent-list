@@ -1,0 +1,1 @@
+Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6965.107 Safari/537.36
