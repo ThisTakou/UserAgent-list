@@ -7,7 +7,7 @@ from pathlib import Path
 from collections import defaultdict
 
 KEEP_HOURS = 24
-BATCH_SIZE = 10000
+BATCH_SIZE = 6767
 ALL_SEPARATE_FILES = True
 
 
@@ -408,7 +408,8 @@ def cleanup_old_snapshots(root_dir, keep_hours=24):
     if not root_dir.exists():
         return
 
-    skip = {"data", ".github", "scripts", ".git", "requirements.txt", "README.md", ".gitignore"}
+    skip = {".github", "scripts", ".git", "requirements.txt", "README.md", ".gitignore"}
+    skip.update(OPERATING_SYSTEMS.keys())
 
     snapshots = []
     for item in root_dir.iterdir():
@@ -448,13 +449,12 @@ def cleanup_old_snapshots(root_dir, keep_hours=24):
             print(f"Extra cleanup: {folder.name}")
 
 
-def update_all_folder(all_dir, all_ua):
-    all_dir = all_dir / "ALL"
-    all_dir.mkdir(parents=True, exist_ok=True)
+def update_all_folder(root_dir, all_ua):
+    root_dir.mkdir(parents=True, exist_ok=True)
 
     if ALL_SEPARATE_FILES:
         for (os_name, browser_name), ua_list in all_ua.items():
-            folder = all_dir / os_name / browser_name
+            folder = root_dir / os_name / browser_name
             folder.mkdir(parents=True, exist_ok=True)
             file_path = folder / "agents.txt"
 
@@ -472,7 +472,7 @@ def update_all_folder(all_dir, all_ua):
                     for ua in new_ua:
                         f.write(ua + "\n")
 
-    all_file = all_dir / "all_user_agents.txt"
+    all_file = root_dir / "all_user_agents.txt"
     existing_all = set()
     if all_file.exists():
         with open(all_file, "r", encoding="utf-8") as f:
@@ -493,7 +493,7 @@ def update_all_folder(all_dir, all_ua):
             for ua in new_all:
                 f.write(ua + "\n")
 
-    stats_file = all_dir / "stats.txt"
+    stats_file = root_dir / "stats.txt"
     with open(stats_file, "w", encoding="utf-8") as f:
         f.write(f"Last updated: {datetime.now(timezone.utc).isoformat()}\n")
         f.write(f"Total unique UA: {len(existing_all)}\n")
@@ -508,8 +508,6 @@ def main():
     timestamp = now.strftime("%Y-%m-%d_%H-%M-%S")
 
     root_dir = Path(".")
-    data_dir = Path("data")
-    data_dir.mkdir(exist_ok=True)
 
     print(f"Retention: {KEEP_HOURS} hours")
     cleanup_old_snapshots(root_dir, keep_hours=KEEP_HOURS)
@@ -566,13 +564,13 @@ def main():
             all_ua[(os_name, browser_name)].extend(ua_list)
             total_ua += len(ua_list)
 
-    print(f"Updating data/ALL/...")
-    total_unique, added = update_all_folder(data_dir, all_ua)
+    print(f"Updating cumulative folders...")
+    total_unique, added = update_all_folder(root_dir, all_ua)
 
     print(f"Generated UA: {total_ua}")
     print(f"Files in snapshot: {total_files}")
-    print(f"Total unique UA in ALL/: {total_unique}")
-    print(f"Added to ALL/: {added}")
+    print(f"Total unique UA: {total_unique}")
+    print(f"Added: {added}")
     print(f"OS count: {len(OPERATING_SYSTEMS)}")
     print(f"Browser count: {len(BROWSERS)}")
     print(f"Snapshot: {run_dir}")
