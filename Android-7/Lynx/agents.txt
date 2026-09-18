@@ -1,1 +1,2 @@
 Lynx/2.0 (text-mode)
+Lynx/2.9.0 (text-mode)
