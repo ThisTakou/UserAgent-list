@@ -104,3 +104,4 @@ Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari
 Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Vivaldi/4.0
 Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Vivaldi/5.0
 Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 Safari/537.36 Vivaldi/4.0
+Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36 Vivaldi/4.0
