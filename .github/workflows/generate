@@ -1,0 +1,51 @@
+name: Generate Random User Agents
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # каждый час
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate User Agents
+        run: python scripts/generate.py
+
+      - name: Show repo size
+        run: |
+          echo "📊 Размер data/:"
+          du -sh data/ || true
+          echo "📁 Папок в data/:"
+          ls -la data/ | head -20
+          echo "📄 Всего .txt файлов:"
+          find data/ -name "*.txt" | wc -l
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add -A data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+            git commit -m "🤖 UA snapshot $TIMESTAMP"
+            git push
+          fi
