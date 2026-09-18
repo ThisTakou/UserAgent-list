@@ -1,1 +1,0 @@
-Mozilla/5.0 (Linux; Android 7.1.2; rv:115.0) Gecko/20100101 Firefox/115.0

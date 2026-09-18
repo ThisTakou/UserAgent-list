@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; DragonFly amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.1257.167 Safari/537.36

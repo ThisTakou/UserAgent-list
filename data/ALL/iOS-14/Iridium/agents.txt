@@ -1,1 +1,0 @@
-Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6929.186 Safari/537.36

@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; elementary OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.1210.199 Safari/537.36
