@@ -6,8 +6,8 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from collections import defaultdict
 
-KEEP_HOURS = 24
-BATCH_SIZE = 6767
+KEEP_HOURS = 6
+BATCH_SIZE = 100
 ALL_SEPARATE_FILES = True
 
 
@@ -21,82 +21,82 @@ def weighted_versions(latest: int, supported: int):
 
 
 BROWSERS = {
-    "Chrome":               {"engine": "Blink",    "popularity": 65, "versions": weighted_versions(131, 120)},
+    "Chrome":               {"engine": "Blink",    "popularity": 65, "versions": weighted_versions(131, 100)},
     "Chrome-Beta":          {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
     "Chrome-Canary":        {"engine": "Blink",    "popularity": 1,  "versions": [(133, 1)]},
     "Chrome-Dev":           {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
-    "Chrome-Headless":      {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
-    "Chromium":             {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(131, 120)},
+    "Chrome-Headless":      {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 100)},
+    "Chromium":             {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(131, 100)},
     "Chromium-Beta":        {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
-    "Ungoogled-Chromium":   {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
-    "Brave":                {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
+    "Ungoogled-Chromium":   {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 100)},
+    "Brave":                {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 100)},
     "Brave-Beta":           {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
     "Brave-Nightly":        {"engine": "Blink",    "popularity": 1,  "versions": [(133, 1)]},
-    "Edge":                 {"engine": "Blink",    "popularity": 5,  "versions": weighted_versions(131, 120)},
+    "Edge":                 {"engine": "Blink",    "popularity": 5,  "versions": weighted_versions(131, 100)},
     "Edge-Beta":            {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
     "Edge-Dev":             {"engine": "Blink",    "popularity": 1,  "versions": [(132, 1)]},
     "Edge-Canary":          {"engine": "Blink",    "popularity": 1,  "versions": [(133, 1)]},
-    "Opera":                {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(116, 105)},
-    "Opera-GX":             {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(116, 105)},
+    "Opera":                {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(116, 95)},
+    "Opera-GX":             {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(116, 95)},
     "Opera-Air":            {"engine": "Blink",    "popularity": 1,  "versions": [(4, 1), (3, 1)]},
     "Opera-Beta":           {"engine": "Blink",    "popularity": 1,  "versions": [(117, 1)]},
     "Opera-Developer":      {"engine": "Blink",    "popularity": 1,  "versions": [(117, 1)]},
-    "Vivaldi":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(7, 6)},
+    "Vivaldi":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(7, 4)},
     "Vivaldi-Snapshot":     {"engine": "Blink",    "popularity": 1,  "versions": [(8, 1)]},
-    "Yandex":               {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(25, 23)},
+    "Yandex":               {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(25, 20)},
     "Yandex-Beta":          {"engine": "Blink",    "popularity": 1,  "versions": [(26, 1)]},
-    "Samsung-Internet":     {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(26, 22)},
+    "Samsung-Internet":     {"engine": "Blink",    "popularity": 2,  "versions": weighted_versions(26, 18)},
     "Samsung-Internet-Beta":{"engine": "Blink",    "popularity": 1,  "versions": [(27, 1)]},
     "UC-Browser":           {"engine": "Blink",    "popularity": 1,  "versions": [(13, 3), (12, 1)]},
     "UC-Browser-Mini":      {"engine": "WebKit",   "popularity": 1,  "versions": [(13, 1)]},
     "DuckDuckGo":           {"engine": "Blink",    "popularity": 1,  "versions": [(7, 2), (6, 1)]},
-    "Epic":                 {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(120, 110)},
-    "Avast-Secure":         {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(125, 120)},
-    "AVG-Secure":           {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(125, 120)},
-    "Comodo-Dragon":        {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 120)},
+    "Epic":                 {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(120, 100)},
+    "Avast-Secure":         {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(125, 100)},
+    "AVG-Secure":           {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(125, 100)},
+    "Comodo-Dragon":        {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 100)},
     "Torch":                {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(70, 60)},
     "Slimjet":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(40, 35)},
-    "Coc-Coc":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(120, 110)},
+    "Coc-Coc":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(120, 100)},
     "360-Browser":          {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(16, 14)},
     "QQ-Browser":           {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(15, 12)},
     "Maxthon":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(8, 6)},
     "Puffin":               {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(11, 9)},
     "Ghost-Browser":        {"engine": "Blink",    "popularity": 1,  "versions": [(2, 1)]},
-    "Iron":                 {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 120)},
-    "Iridium":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 120)},
+    "Iron":                 {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 100)},
+    "Iridium":              {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(130, 100)},
     "Cent-Browser":         {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(6, 4)},
     "Dissenter":            {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(100, 90)},
     "Naver-Whale":          {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(5, 3)},
-    "Android-WebView":      {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 120)},
-    "Chrome-Mobile":        {"engine": "Blink",    "popularity": 3,  "versions": weighted_versions(131, 120)},
-    "Firefox":              {"engine": "Gecko",    "popularity": 3,  "versions": weighted_versions(134, 128)},
+    "Android-WebView":      {"engine": "Blink",    "popularity": 1,  "versions": weighted_versions(131, 100)},
+    "Chrome-Mobile":        {"engine": "Blink",    "popularity": 3,  "versions": weighted_versions(131, 100)},
+    "Firefox":              {"engine": "Gecko",    "popularity": 3,  "versions": weighted_versions(134, 110)},
     "Firefox-Beta":         {"engine": "Gecko",    "popularity": 1,  "versions": [(135, 1)]},
     "Firefox-Nightly":      {"engine": "Gecko",    "popularity": 1,  "versions": [(136, 1)]},
     "Firefox-Developer":    {"engine": "Gecko",    "popularity": 1,  "versions": [(134, 1)]},
     "Firefox-ESR":          {"engine": "Gecko",    "popularity": 1,  "versions": [(128, 3), (115, 1)]},
-    "Firefox-Focus":        {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(130, 125)},
-    "Firefox-Mobile":       {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(134, 128)},
+    "Firefox-Focus":        {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(130, 120)},
+    "Firefox-Mobile":       {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(134, 110)},
     "Waterfox":             {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(6, 5)},
     "Waterfox-Classic":     {"engine": "Gecko",    "popularity": 1,  "versions": [(56, 1)]},
     "Waterfox-Current":     {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(6, 5)},
-    "LibreWolf":            {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(134, 128)},
-    "GNU-IceCat":           {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(128, 120)},
+    "LibreWolf":            {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(134, 110)},
+    "GNU-IceCat":           {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(128, 115)},
     "SeaMonkey":            {"engine": "Gecko",    "popularity": 1,  "versions": [(2, 1)]},
     "Tor-Browser":          {"engine": "Gecko",    "popularity": 1,  "versions": [(14, 3), (13, 2), (12, 1)]},
     "Mullvad-Browser":      {"engine": "Gecko",    "popularity": 1,  "versions": [(14, 2), (13, 1)]},
     "Pale-Moon":            {"engine": "Goanna",   "popularity": 1,  "versions": [(33, 2), (32, 1), (31, 1)]},
     "Basilisk":             {"engine": "Goanna",   "popularity": 1,  "versions": [(2025, 1), (2024, 1)]},
-    "Comodo-IceDragon":     {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(130, 120)},
-    "Safari":               {"engine": "WebKit",   "popularity": 18, "versions": [(18, 40), (17, 35), (16, 15), (15, 7), (14, 3)]},
-    "Mobile-Safari":        {"engine": "WebKit",   "popularity": 10, "versions": [(18, 40), (17, 35), (16, 15), (15, 7), (14, 3)]},
+    "Comodo-IceDragon":     {"engine": "Gecko",    "popularity": 1,  "versions": weighted_versions(130, 100)},
+    "Safari":               {"engine": "WebKit",   "popularity": 18, "versions": [(18, 40), (17, 35), (16, 15), (15, 7), (14, 3), (13, 1), (12, 1)]},
+    "Mobile-Safari":        {"engine": "WebKit",   "popularity": 10, "versions": [(18, 40), (17, 35), (16, 15), (15, 7), (14, 3), (13, 1), (12, 1)]},
     "Safari-TP":            {"engine": "WebKit",   "popularity": 1,  "versions": [(190, 1)]},
     "WebKit-Nightly":       {"engine": "WebKit",   "popularity": 1,  "versions": [(2025, 1), (2024, 1)]},
-    "iOS-WebView":          {"engine": "WebKit",   "popularity": 1,  "versions": [(18, 3), (17, 2), (16, 1)]},
-    "Epiphany":             {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(46, 44)},
-    "Midori":               {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(11, 10)},
+    "iOS-WebView":          {"engine": "WebKit",   "popularity": 1,  "versions": [(18, 3), (17, 2), (16, 1), (15, 1)]},
+    "Epiphany":             {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(46, 40)},
+    "Midori":               {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(11, 9)},
     "Falkon":               {"engine": "WebKit",   "popularity": 1,  "versions": weighted_versions(3, 2)},
-    "Konqueror":            {"engine": "KHTML",    "popularity": 1,  "versions": weighted_versions(24, 22)},
-    "Electron":             {"engine": "Electron", "popularity": 1,  "versions": weighted_versions(33, 28)},
+    "Konqueror":            {"engine": "KHTML",    "popularity": 1,  "versions": weighted_versions(24, 20)},
+    "Electron":             {"engine": "Electron", "popularity": 1,  "versions": weighted_versions(33, 20)},
     "Discord":              {"engine": "Electron", "popularity": 1,  "versions": [(1, 1)]},
     "Slack":                {"engine": "Electron", "popularity": 1,  "versions": [(4, 1)]},
     "Spotify":              {"engine": "Electron", "popularity": 1,  "versions": [(1, 1)]},
@@ -271,7 +271,7 @@ def build_ua(browser_name, version, os_name, os_info):
     b = browser_name.lower()
 
     if engine in ("Blink", "Electron"):
-        chrome_ver = version if b == "chrome" else random.randint(120, 131)
+        chrome_ver = version if b == "chrome" else random.randint(100, 131)
         if "edge" in b:
             return f"Mozilla/5.0 ({platform}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chrome_ver}.0.0.0 Safari/537.36 Edg/{chrome_ver}.0.0.0"
         if "opera" in b:
@@ -304,7 +304,7 @@ def build_ua(browser_name, version, os_name, os_info):
 
     if engine == "WebKit":
         if "mobile" in b or os_info["family"] == "iOS":
-            ios_ver = version if version < 100 else random.randint(15, 18)
+            ios_ver = version if version < 100 else random.randint(12, 18)
             return f"Mozilla/5.0 (iPhone; CPU iPhone OS {ios_ver}_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/{ios_ver}.0 Mobile/15E148 Safari/604.1"
         return f"Mozilla/5.0 ({platform}) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/{version}.0 Safari/605.1.15"
 
@@ -404,7 +404,7 @@ def is_compatible(browser, os_family):
     return True
 
 
-def cleanup_old_snapshots(root_dir, keep_hours=24):
+def cleanup_old_snapshots(root_dir, keep_hours=6):
     if not root_dir.exists():
         return
 
@@ -532,16 +532,19 @@ def main():
 
             pop = browser_info["popularity"]
             if pop >= 50:
-                count = 3
+                count = 300
             elif pop >= 10:
-                count = 2
+                count = 200
+            elif pop >= 3:
+                count = 150
             else:
-                count = 1
+                count = 100
 
             ua_list = []
             seen = set()
             attempts = 0
-            while len(ua_list) < count and attempts < count * 10:
+            max_attempts = count * 20
+            while len(ua_list) < count and attempts < max_attempts:
                 attempts += 1
                 version = pick_version(browser_info)
                 ua = build_ua(browser_name, version, os_name, os_info)
@@ -550,10 +553,9 @@ def main():
                 seen.add(ua)
                 ua_list.append(ua)
 
-            BATCH = BATCH_SIZE
             file_index = 1
-            for i in range(0, len(ua_list), BATCH):
-                chunk = ua_list[i:i + BATCH]
+            for i in range(0, len(ua_list), BATCH_SIZE):
+                chunk = ua_list[i:i + BATCH_SIZE]
                 txt_file = browser_folder / f"agents_{file_index}.txt"
                 with open(txt_file, "w", encoding="utf-8") as f:
                     f.write("\n".join(chunk))
