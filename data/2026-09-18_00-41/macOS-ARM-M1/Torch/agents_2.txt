@@ -1,0 +1,1 @@
+Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.9674.116 Safari/537.36

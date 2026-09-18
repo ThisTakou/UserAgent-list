@@ -1,2 +1,4 @@
 Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.8447.111 Safari/537.36
 Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6278.156 Safari/537.36
+Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.4070.136 Safari/537.36
+Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.4722.114 Safari/537.36

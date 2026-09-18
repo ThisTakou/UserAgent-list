@@ -1,0 +1,1 @@
+Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Telegram-Desktop/5.0.0 Chrome/121.0.0.0 Electron/5.0.0 Safari/537.36

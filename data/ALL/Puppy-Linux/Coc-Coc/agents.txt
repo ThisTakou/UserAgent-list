@@ -1,2 +1,4 @@
 Mozilla/5.0 (X11; Puppy; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.8697.199 Safari/537.36
 Mozilla/5.0 (X11; Puppy; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.3718.98 Safari/537.36
+Mozilla/5.0 (X11; Puppy; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.1012.197 Safari/537.36
+Mozilla/5.0 (X11; Puppy; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.2056.171 Safari/537.36

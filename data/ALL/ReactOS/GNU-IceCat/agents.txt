@@ -1,2 +1,4 @@
 Mozilla/5.0 (Windows NT 5.2; ReactOS; rv:124.0) Gecko/20100101 Firefox/124.0
 Mozilla/5.0 (Windows NT 5.2; ReactOS; rv:122.0) Gecko/20100101 Firefox/122.0
+Mozilla/5.0 (Windows NT 5.2; ReactOS; rv:128.0) Gecko/20100101 Firefox/128.0
+Mozilla/5.0 (Windows NT 5.2; ReactOS; rv:126.0) Gecko/20100101 Firefox/126.0

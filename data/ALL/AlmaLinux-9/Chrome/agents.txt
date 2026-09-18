@@ -6,3 +6,11 @@ Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.3141.59 Safari/537.36
 Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.5033.200 Safari/537.36
 Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.9807.106 Safari/537.36
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.8393.70 Safari/537.36
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.2051.129 Safari/537.36
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.4543.199 Safari/537.36
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.3730.72 Safari/537.36
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.9460.197 Safari/537.36
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.9808.89 Safari/537.36
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.7053.79 Safari/537.36
+Mozilla/5.0 (X11; AlmaLinux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.1052.195 Safari/537.36

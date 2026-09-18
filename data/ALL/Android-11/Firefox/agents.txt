@@ -1,3 +1,4 @@
 Mozilla/5.0 (Linux; Android 11; rv:134.0) Gecko/20100101 Firefox/134.0
 Mozilla/5.0 (Linux; Android 11; rv:133.0) Gecko/20100101 Firefox/133.0
 Mozilla/5.0 (Linux; Android 11; rv:129.0) Gecko/20100101 Firefox/129.0
+Mozilla/5.0 (Linux; Android 11; rv:131.0) Gecko/20100101 Firefox/131.0

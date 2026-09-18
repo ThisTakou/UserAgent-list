@@ -6,3 +6,11 @@ Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
 Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.9861.183 Safari/537.36
 Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.3215.168 Safari/537.36
 Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6596.117 Safari/537.36
+Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.4774.162 Safari/537.36
+Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6422.119 Safari/537.36
+Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.4922.146 Safari/537.36
+Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.1688.109 Safari/537.36
+Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.5234.101 Safari/537.36
+Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.9029.179 Safari/537.36
+Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.9054.194 Safari/537.36
+Mozilla/5.0 (X11; Zorin OS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.3966.122 Safari/537.36
