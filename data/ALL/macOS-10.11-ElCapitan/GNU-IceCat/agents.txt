@@ -1,0 +1,1 @@
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6; rv:127.0) Gecko/20100101 Firefox/127.0
