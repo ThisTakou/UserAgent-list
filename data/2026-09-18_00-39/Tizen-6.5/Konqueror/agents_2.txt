@@ -1,1 +1,0 @@
-Mozilla/5.0 (Linux; Tizen 6.5) AppleWebKit/605.1.15 (KHTML, like Gecko) Konqueror/23.0

@@ -1,1 +1,0 @@
-Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.5840.109 Safari/537.36

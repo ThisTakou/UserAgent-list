@@ -1,6 +1,0 @@
-Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.1578.79 Safari/537.36
-Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.3617.61 Safari/537.36
-Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.5158.74 Safari/537.36
-Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6855.89 Safari/537.36
-Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.9668.190 Safari/537.36
-Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.4281.94 Safari/537.36

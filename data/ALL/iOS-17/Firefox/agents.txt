@@ -1,4 +1,0 @@
-Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X; rv:134.0) Gecko/20100101 Firefox/134.0
-Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X; rv:132.0) Gecko/20100101 Firefox/132.0
-Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X; rv:133.0) Gecko/20100101 Firefox/133.0
-Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X; rv:131.0) Gecko/20100101 Firefox/131.0

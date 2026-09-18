@@ -1,1 +1,0 @@
-Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; rv:2024.0) Gecko/20100101 Basilisk/2024.0

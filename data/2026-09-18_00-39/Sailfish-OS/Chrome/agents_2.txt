@@ -1,1 +1,0 @@
-Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.7758.73 Safari/537.36

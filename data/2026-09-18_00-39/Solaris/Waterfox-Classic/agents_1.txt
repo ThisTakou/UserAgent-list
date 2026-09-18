@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; SunOS sun4u; rv:56.0) Gecko/20100101 Firefox/56.0

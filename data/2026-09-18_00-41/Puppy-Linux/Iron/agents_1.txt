@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; Puppy; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.2710.191 Safari/537.36

@@ -1,1 +1,0 @@
-Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.7257.137 Safari/537.36

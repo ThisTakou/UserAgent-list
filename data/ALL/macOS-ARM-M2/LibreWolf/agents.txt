@@ -1,5 +1,0 @@
-Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0; rv:131.0) Gecko/20100101 Firefox/131.0
-Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0; rv:133.0) Gecko/20100101 Firefox/133.0
-Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0; rv:134.0) Gecko/20100101 Firefox/134.0
-Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0; rv:132.0) Gecko/20100101 Firefox/132.0
-Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0; rv:128.0) Gecko/20100101 Firefox/128.0

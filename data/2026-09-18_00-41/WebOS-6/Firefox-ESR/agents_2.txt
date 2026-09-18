@@ -1,1 +1,0 @@
-Mozilla/5.0 (Linux; webOS 6.0; rv:115.0) Gecko/20100101 Firefox/115.0

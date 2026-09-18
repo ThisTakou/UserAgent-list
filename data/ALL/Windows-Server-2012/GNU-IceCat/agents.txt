@@ -1,4 +1,0 @@
-Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0
-Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
-Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0
-Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0

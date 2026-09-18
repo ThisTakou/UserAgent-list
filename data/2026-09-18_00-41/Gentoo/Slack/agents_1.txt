@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; Gentoo; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Slack/4.0.0 Chrome/121.0.0.0 Electron/4.0.0 Safari/537.36

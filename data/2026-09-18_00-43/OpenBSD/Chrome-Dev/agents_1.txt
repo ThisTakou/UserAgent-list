@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; OpenBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.9867.111 Safari/537.36

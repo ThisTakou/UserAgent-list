@@ -1,1 +1,0 @@
-Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Spotify/1.0.0 Chrome/129.0.0.0 Electron/1.0.0 Safari/537.36

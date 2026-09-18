@@ -1,1 +1,0 @@
-Mozilla/5.0 (Linux; Android 7.1.2) AppleWebKit/537.36 (KHTML, like Gecko) Notion/3.0.0 Chrome/121.0.0.0 Electron/3.0.0 Safari/537.36

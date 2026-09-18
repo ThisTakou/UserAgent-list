@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; Kali Linux; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.9520.126 Safari/537.36

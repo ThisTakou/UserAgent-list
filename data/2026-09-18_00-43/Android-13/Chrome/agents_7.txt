@@ -1,1 +1,0 @@
-Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.4355.173 Safari/537.36

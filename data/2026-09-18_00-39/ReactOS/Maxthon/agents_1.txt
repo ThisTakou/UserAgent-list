@@ -1,1 +1,0 @@
-Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.1331.137 Safari/537.36

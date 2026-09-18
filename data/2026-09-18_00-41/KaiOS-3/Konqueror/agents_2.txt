@@ -1,1 +1,0 @@
-Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/605.1.15 (KHTML, like Gecko) Konqueror/22.0

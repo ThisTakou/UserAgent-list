@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; Slackware; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0

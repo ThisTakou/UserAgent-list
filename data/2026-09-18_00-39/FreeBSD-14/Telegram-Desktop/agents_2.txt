@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Telegram-Desktop/4.0.0 Chrome/128.0.0.0 Electron/4.0.0 Safari/537.36

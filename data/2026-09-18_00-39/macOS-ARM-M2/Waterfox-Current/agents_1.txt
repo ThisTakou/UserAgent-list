@@ -1,1 +1,0 @@
-Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0; rv:6.0) Gecko/20100101 Firefox/6.0

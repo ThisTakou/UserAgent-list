@@ -1,1 +1,0 @@
-Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.9935.88 Safari/537.36

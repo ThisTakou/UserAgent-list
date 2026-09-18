@@ -1,1 +1,0 @@
-Mozilla/5.0 (Linux; HarmonyOS 4.0; rv:14.0) Gecko/20100101 Firefox/14.0
