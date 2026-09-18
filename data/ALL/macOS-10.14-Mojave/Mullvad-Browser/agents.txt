@@ -1,1 +1,2 @@
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6; rv:14.0) Gecko/20100101 Firefox/14.0
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6; rv:13.0) Gecko/20100101 Firefox/13.0

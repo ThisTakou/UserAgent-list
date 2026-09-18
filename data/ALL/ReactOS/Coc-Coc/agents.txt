@@ -1,1 +1,2 @@
 Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.9782.106 Safari/537.36
+Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.5542.167 Safari/537.36

@@ -1,1 +1,2 @@
 Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X; rv:130.0) Gecko/20100101 Firefox/130.0
+Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X; rv:128.0) Gecko/20100101 Firefox/128.0

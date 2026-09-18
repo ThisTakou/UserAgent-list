@@ -1,1 +1,2 @@
 Mozilla/5.0 (Linux; Sailfish; rv:6.0) Gecko/20100101 Firefox/6.0
+Mozilla/5.0 (Linux; Sailfish; rv:5.0) Gecko/20100101 Firefox/5.0

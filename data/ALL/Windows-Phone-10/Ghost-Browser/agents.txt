@@ -1,1 +1,2 @@
 Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.5239.91 Safari/537.36
+Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.2827.127 Safari/537.36

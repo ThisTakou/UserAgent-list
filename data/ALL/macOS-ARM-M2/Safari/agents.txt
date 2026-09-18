@@ -1,2 +1,3 @@
 Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15
 Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15
+Mozilla/5.0 (Macintosh; ARM Mac OS X 13_0_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15
