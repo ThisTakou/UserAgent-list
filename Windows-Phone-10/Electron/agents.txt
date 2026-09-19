@@ -152,3 +152,6 @@ Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like 
 Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Electron/20.0.0 Chrome/109.0.0.0 Electron/20.0.0 Safari/537.36
 Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Electron/26.0.0 Chrome/128.0.0.0 Electron/26.0.0 Safari/537.36
 Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Electron/30.0.0 Chrome/104.0.0.0 Electron/30.0.0 Safari/537.36
+Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Electron/26.0.0 Chrome/123.0.0.0 Electron/26.0.0 Safari/537.36
+Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Electron/25.0.0 Chrome/131.0.0.0 Electron/25.0.0 Safari/537.36
+Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Electron/23.0.0 Chrome/112.0.0.0 Electron/23.0.0 Safari/537.36
