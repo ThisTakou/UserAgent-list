@@ -1,1 +1,0 @@
-Mozilla/5.0 (X11; Red Hat; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/123.0.0.0 Safari/537.36
