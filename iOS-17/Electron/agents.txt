@@ -186,3 +186,4 @@ Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/537.36 (KHTML
 Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Electron/26.0.0 Chrome/118.0.0.0 Electron/26.0.0 Safari/537.36
 Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Electron/27.0.0 Chrome/123.0.0.0 Electron/27.0.0 Safari/537.36
 Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Electron/29.0.0 Chrome/129.0.0.0 Electron/29.0.0 Safari/537.36
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Electron/22.0.0 Chrome/120.0.0.0 Electron/22.0.0 Safari/537.36
