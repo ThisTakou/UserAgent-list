@@ -190,3 +190,5 @@ Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 Safari
 Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/111.0.0.0
 Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/97.0.0.0
 Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/110.0.0.0
+Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 OPR/106.0.0.0
+Mozilla/5.0 (AIX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/103.0.0.0
