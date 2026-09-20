@@ -186,3 +186,7 @@ Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Electron/31
 Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Electron/20.0.0 Chrome/109.0.0.0 Electron/20.0.0 Safari/537.36
 Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Electron/30.0.0 Chrome/106.0.0.0 Electron/30.0.0 Safari/537.36
 Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Electron/30.0.0 Chrome/100.0.0.0 Electron/30.0.0 Safari/537.36
+Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Electron/30.0.0 Chrome/126.0.0.0 Electron/30.0.0 Safari/537.36
+Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Electron/21.0.0 Chrome/115.0.0.0 Electron/21.0.0 Safari/537.36
+Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Electron/23.0.0 Chrome/100.0.0.0 Electron/23.0.0 Safari/537.36
+Mozilla/5.0 (Linux; Sailfish) AppleWebKit/537.36 (KHTML, like Gecko) Electron/26.0.0 Chrome/110.0.0.0 Electron/26.0.0 Safari/537.36
