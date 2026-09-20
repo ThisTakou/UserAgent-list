@@ -1,0 +1,7 @@
+Mozilla/5.0 (iPhone; CPU iPhone OS 43_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/43.0 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (iPhone; CPU iPhone OS 45_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/45.0 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (iPhone; CPU iPhone OS 46_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/46.0 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (iPhone; CPU iPhone OS 40_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/40.0 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (iPhone; CPU iPhone OS 42_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/42.0 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (iPhone; CPU iPhone OS 44_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/44.0 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (iPhone; CPU iPhone OS 41_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/41.0 Mobile/15E148 Safari/604.1
