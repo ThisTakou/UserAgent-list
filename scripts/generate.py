@@ -7,7 +7,7 @@ from pathlib import Path
 from collections import defaultdict
 
 KEEP_DAYS = 0.05
-BATCH_SIZE = 50
+BATCH_SIZE = 250
 ALL_SEPARATE_FILES = True
 
 
