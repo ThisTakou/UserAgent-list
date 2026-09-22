@@ -6,7 +6,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from collections import defaultdict
 
-KEEP_DAYS = 0.05
+KEEP_DAYS = 0.10
 BATCH_SIZE = 250
 ALL_SEPARATE_FILES = True
 
