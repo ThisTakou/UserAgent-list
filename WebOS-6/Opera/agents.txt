@@ -237,3 +237,6 @@ Mozilla/5.0 (Linux; webOS 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114
 Mozilla/5.0 (Linux; webOS 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/104.0.0.0
 Mozilla/5.0 (Linux; webOS 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/111.0.0.0
 Mozilla/5.0 (Linux; webOS 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 Safari/537.36 OPR/112.0.0.0
+Mozilla/5.0 (Linux; webOS 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 OPR/111.0.0.0
+Mozilla/5.0 (Linux; webOS 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 OPR/109.0.0.0
+Mozilla/5.0 (Linux; webOS 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/101.0.0.0

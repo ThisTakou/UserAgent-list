@@ -199,3 +199,4 @@ Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Electro
 Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Electron/22.0.0 Chrome/126.0.0.0 Electron/22.0.0 Safari/537.36
 Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Electron/22.0.0 Chrome/130.0.0.0 Electron/22.0.0 Safari/537.36
 Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Electron/28.0.0 Chrome/113.0.0.0 Electron/28.0.0 Safari/537.36
+Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Electron/27.0.0 Chrome/106.0.0.0 Electron/27.0.0 Safari/537.36
