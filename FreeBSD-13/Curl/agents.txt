@@ -1,2 +1,4 @@
 Curl/8.0
 Curl/7.0
+curl/8.12.0
+curl/7.12.0

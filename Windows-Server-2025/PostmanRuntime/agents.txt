@@ -1,1 +1,2 @@
 PostmanRuntime/7.0
+PostmanRuntime/7.40.0
