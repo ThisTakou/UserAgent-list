@@ -6,8 +6,8 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from collections import defaultdict
 
-KEEP_DAYS = 0.10
-BATCH_SIZE = 250
+KEEP_DAYS = 0.05
+BATCH_SIZE = 50
 ALL_SEPARATE_FILES = True
 
 
@@ -357,22 +357,30 @@ def build_ua(browser_name, version, os_name, os_info):
         return f"{browser_name}/{version}.0"
 
     if engine == "CLI":
+        if "axios" in b:
+            return f"axios/{version}.6.2"
         if "python" in b:
-            return f"python-requests/{version}.0"
+            return f"python-requests/{version}.31.0"
         if "go-http" in b:
-            return f"Go-http-client/{version}.0"
+            return f"Go-http-client/{version}.1"
         if "java" in b:
-            return f"Java/{version}.0"
+            return f"Java/{version}.0.1"
         if "node-fetch" in b:
-            return f"node-fetch/{version}.0"
+            return f"node-fetch/{version}.3.3"
         if "okhttp" in b:
-            return f"okhttp/{version}.0"
+            return f"okhttp/{version}.0.0"
         if "postmanruntime" in b:
-            return f"PostmanRuntime/{version}.0"
+            return f"PostmanRuntime/{version}.40.0"
         if "google-http-java" in b:
-            return f"Google-HTTP-Java-Client/{version}.0"
+            return f"Google-HTTP-Java-Client/{version}.43.0"
         if "libwww" in b:
-            return f"libwww-perl/{version}.0"
+            return f"libwww-perl/{version}.72"
+        if "curl" in b:
+            return f"curl/{version}.12.0"
+        if "wget" in b:
+            return f"Wget/{version}.21.4"
+        if "httpie" in b:
+            return f"HTTPie/{version}.2.1"
         return f"{browser_name}/{version}.0"
 
     if engine == "Text":
@@ -404,7 +412,7 @@ def is_compatible(browser, os_family):
     return True
 
 
-def cleanup_old_snapshots(root_dir, keep_days=30):
+def cleanup_old_snapshots(root_dir, keep_days=0.05):
     if not root_dir.exists():
         return
 
@@ -439,7 +447,7 @@ def cleanup_old_snapshots(root_dir, keep_days=30):
     else:
         print(f"Nothing to remove (limit: {keep_days} days)")
 
-    max_snapshots = keep_days * 24 * 12 + 100
+    max_snapshots = int(keep_days * 24 * 12) + 5
     remaining = [(dt, f) for dt, f in snapshots if f.name not in removed]
     if len(remaining) > max_snapshots:
         remaining.sort(key=lambda x: x[0])
@@ -449,7 +457,7 @@ def cleanup_old_snapshots(root_dir, keep_days=30):
             print(f"Extra cleanup: {folder.name}")
 
 
-def update_all_folder(root_dir, all_ua):
+def update_cumulative(root_dir, all_ua):
     root_dir.mkdir(parents=True, exist_ok=True)
 
     if ALL_SEPARATE_FILES:
@@ -472,35 +480,10 @@ def update_all_folder(root_dir, all_ua):
                     for ua in new_ua:
                         f.write(ua + "\n")
 
-    all_file = root_dir / "all_user_agents.txt"
-    existing_all = set()
-    if all_file.exists():
-        with open(all_file, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if line:
-                    existing_all.add(line)
-
-    new_all = []
-    for ua_list in all_ua.values():
-        for ua in ua_list:
-            if ua not in existing_all:
-                new_all.append(ua)
-                existing_all.add(ua)
-
-    if new_all:
-        with open(all_file, "a", encoding="utf-8") as f:
-            for ua in new_all:
-                f.write(ua + "\n")
-
     stats_file = root_dir / "stats.txt"
     with open(stats_file, "w", encoding="utf-8") as f:
         f.write(f"Last updated: {datetime.now(timezone.utc).isoformat()}\n")
-        f.write(f"Total unique UA: {len(existing_all)}\n")
-        f.write(f"Added this run: {len(new_all)}\n")
         f.write(f"OS/Browser combos: {len(all_ua)}\n")
-
-    return len(existing_all), len(new_all)
 
 
 def main():
@@ -567,12 +550,10 @@ def main():
             total_ua += len(ua_list)
 
     print(f"Updating cumulative folders...")
-    total_unique, added = update_all_folder(root_dir, all_ua)
+    update_cumulative(root_dir, all_ua)
 
     print(f"Generated UA: {total_ua}")
     print(f"Files in snapshot: {total_files}")
-    print(f"Total unique UA: {total_unique}")
-    print(f"Added: {added}")
     print(f"OS count: {len(OPERATING_SYSTEMS)}")
     print(f"Browser count: {len(BROWSERS)}")
     print(f"Snapshot: {run_dir}")
