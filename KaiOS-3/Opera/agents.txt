@@ -240,3 +240,6 @@ Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/13
 Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/99.0.0.0
 Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/95.0.0.0
 Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/107.0.0.0
+Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/97.0.0.0
+Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/110.0.0.0
+Mozilla/5.0 (Mobile; KaiOS 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 OPR/101.0.0.0
