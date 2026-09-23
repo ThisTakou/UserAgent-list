@@ -237,3 +237,12 @@ Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Ge
 Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/113.0.0.0
 Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/96.0.0.0
 Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/111.0.0.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/114.0.0.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 OPR/111.0.0.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/112.0.0.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/112.0.0.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/108.0.0.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/104.0.0.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 Safari/537.36 OPR/113.0.0.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/108.0.0.0
+Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 OPR/107.0.0.0

@@ -159,3 +159,5 @@ Mozilla/5.0 (X11; CrOS aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/10
 Mozilla/5.0 (X11; CrOS aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 YaBrowser/20.0 Safari/537.36
 Mozilla/5.0 (X11; CrOS aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 YaBrowser/20.0 Safari/537.36
 Mozilla/5.0 (X11; CrOS aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 YaBrowser/20.0 Safari/537.36
+Mozilla/5.0 (X11; CrOS aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 YaBrowser/22.0 Safari/537.36
+Mozilla/5.0 (X11; CrOS aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 YaBrowser/22.0 Safari/537.36
