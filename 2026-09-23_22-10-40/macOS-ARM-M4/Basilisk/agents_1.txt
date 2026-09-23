@@ -1,0 +1,2 @@
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0; rv:2025.0) Gecko/20100101 Basilisk/2025.0
+Mozilla/5.0 (Macintosh; ARM Mac OS X 15_0_0; rv:2024.0) Gecko/20100101 Basilisk/2024.0
