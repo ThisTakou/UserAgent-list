@@ -255,3 +255,9 @@ Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) C
 Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 OPR/102.0.0.0
 Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/96.0.0.0
 Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/96.0.0.0
+Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/96.0.0.0
+Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/111.0.0.0
+Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/97.0.0.0
+Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36 OPR/112.0.0.0
+Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/112.0.0.0
+Mozilla/5.0 (X11; Parrot; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/105.0.0.0
