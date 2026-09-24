@@ -1,0 +1,3 @@
+Mozilla/5.0 (iPhone; CPU iPhone OS 13_0 like Mac OS X; rv:31.0) Gecko/20100101 Pale-Moon/31.0
+Mozilla/5.0 (iPhone; CPU iPhone OS 13_0 like Mac OS X; rv:33.0) Gecko/20100101 Pale-Moon/33.0
+Mozilla/5.0 (iPhone; CPU iPhone OS 13_0 like Mac OS X; rv:32.0) Gecko/20100101 Pale-Moon/32.0
