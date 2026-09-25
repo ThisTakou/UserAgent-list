@@ -275,3 +275,9 @@ Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/10
 Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 OPR/105.0.0.0
 Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 OPR/97.0.0.0
 Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/99.0.0.0
+Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 OPR/108.0.0.0
+Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/99.0.0.0
+Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 OPR/101.0.0.0
+Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 OPR/108.0.0.0
+Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/110.0.0.0
+Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/95.0.0.0

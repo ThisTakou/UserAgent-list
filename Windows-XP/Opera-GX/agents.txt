@@ -290,3 +290,6 @@ Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/
 Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/103.0.0.0
 Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 Safari/537.36 OPR/104.0.0.0
 Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/95.0.0.0
+Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/112.0.0.0
+Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/108.0.0.0
+Mozilla/5.0 (Windows NT 5.1; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/112.0.0.0
