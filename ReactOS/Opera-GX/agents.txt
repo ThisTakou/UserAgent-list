@@ -281,3 +281,5 @@ Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chr
 Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/102.0.0.0
 Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/104.0.0.0
 Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/111.0.0.0
+Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/97.0.0.0
+Mozilla/5.0 (Windows NT 5.2; ReactOS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0
