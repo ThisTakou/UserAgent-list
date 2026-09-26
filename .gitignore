@@ -5,3 +5,5 @@ venv/
 .env
 .DS_Store
 *.log
+releases/*.zip
+releases/*.rar
