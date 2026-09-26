@@ -1,1 +1,0 @@
-DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)
