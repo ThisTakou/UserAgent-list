@@ -250,3 +250,4 @@ Mozilla/5.0 (Macintosh; ARM Mac OS X 14_0_0) AppleWebKit/537.36 (KHTML, like Gec
 Mozilla/5.0 (Macintosh; ARM Mac OS X 14_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Electron/25.0.0 Chrome/123.0.0.0 Electron/25.0.0 Safari/537.36
 Mozilla/5.0 (Macintosh; ARM Mac OS X 14_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Electron/30.0.0 Chrome/113.0.0.0 Electron/30.0.0 Safari/537.36
 Mozilla/5.0 (Macintosh; ARM Mac OS X 14_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Electron/27.0.0 Chrome/106.0.0.0 Electron/27.0.0 Safari/537.36
+Mozilla/5.0 (Macintosh; ARM Mac OS X 14_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Electron/23.0.0 Chrome/116.0.0.0 Electron/23.0.0 Safari/537.36
