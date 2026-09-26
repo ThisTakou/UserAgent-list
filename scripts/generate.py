@@ -2,6 +2,8 @@
 
 import random
 import shutil
+import zipfile
+import subprocess
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from collections import defaultdict
@@ -9,6 +11,7 @@ from collections import defaultdict
 KEEP_DAYS = 0.05
 BATCH_SIZE = 50
 ALL_SEPARATE_FILES = True
+RELEASE_KEEP = 5
 
 
 def weighted_versions(latest: int, supported: int):
@@ -416,7 +419,7 @@ def cleanup_old_snapshots(root_dir, keep_days=0.05):
     if not root_dir.exists():
         return
 
-    skip = {".github", "scripts", ".git", "requirements.txt", "README.md", ".gitignore"}
+    skip = {".github", "scripts", ".git", "requirements.txt", "README.md", ".gitignore", "releases"}
     skip.update(OPERATING_SYSTEMS.keys())
 
     snapshots = []
@@ -486,11 +489,118 @@ def update_cumulative(root_dir, all_ua):
         f.write(f"OS/Browser combos: {len(all_ua)}\n")
 
 
+def build_release_archives(snapshot_dir, releases_dir, timestamp):
+    releases_dir.mkdir(parents=True, exist_ok=True)
+
+    zip_path = releases_dir / f"{timestamp}.zip"
+    rar_path = releases_dir / f"{timestamp}.rar"
+    txt_path = releases_dir / f"{timestamp}.txt"
+
+    os_counts = {}
+    total = 0
+
+    for os_folder in sorted(snapshot_dir.iterdir()):
+        if not os_folder.is_dir():
+            continue
+        os_total = 0
+        for browser_folder in sorted(os_folder.iterdir()):
+            if not browser_folder.is_dir():
+                continue
+            for txt in browser_folder.glob("*.txt"):
+                try:
+                    with open(txt, "r", encoding="utf-8") as f:
+                        lines = [l for l in f if l.strip()]
+                    os_total += len(lines)
+                except Exception:
+                    continue
+        os_counts[os_folder.name] = os_total
+        total += os_total
+
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+        for file in snapshot_dir.rglob("*"):
+            if file.is_file():
+                zf.write(file, file.relative_to(snapshot_dir))
+
+    rar_created = False
+    try:
+        subprocess.run(
+            ["bash", "-c",
+             "mkdir -p /tmp/rar && "
+             "curl -sL https://www.rarlab.com/rar/rarlinux-x64-624.tar.gz | tar -xz -C /tmp/rar --strip-components=1"],
+            check=False,
+        )
+        rar_bin = "/tmp/rar/rar"
+        if Path(rar_bin).exists():
+            subprocess.run(
+                [rar_bin, "a", "-r", "-ep1", "-m5", "-idq", str(rar_path), "."],
+                cwd=snapshot_dir,
+                check=True,
+            )
+            rar_created = True
+    except Exception as e:
+        print(f"RAR creation failed: {e}")
+
+    with open(txt_path, "w", encoding="utf-8") as f:
+        f.write(f"Snapshot: {timestamp}\n")
+        f.write(f"Total UA: {total}\n")
+        f.write(f"OS count: {len(os_counts)}\n\n")
+        f.write("Per-OS totals:\n")
+        for os_name, count in sorted(os_counts.items(), key=lambda x: -x[1]):
+            f.write(f"  {os_name}: {count}\n")
+
+    return zip_path, rar_path if rar_created else None, total, os_counts
+
+
+def build_release_description(timestamp, total, os_counts, zip_name, rar_name):
+    lines = []
+    lines.append(f"# Snapshot {timestamp}")
+    lines.append("")
+    lines.append(f"**Total User-Agents:** {total}")
+    lines.append(f"**Operating Systems:** {len(os_counts)}")
+    lines.append("")
+    lines.append("## Downloads")
+    lines.append("")
+    lines.append(f"- `{zip_name}` - ZIP archive")
+    if rar_name:
+        lines.append(f"- `{rar_name}` - RAR archive")
+    lines.append("")
+    lines.append("## Per-OS User-Agent counts")
+    lines.append("")
+    lines.append("| Operating System | User-Agents |")
+    lines.append("|---|---|")
+    for os_name, count in sorted(os_counts.items(), key=lambda x: -x[1]):
+        lines.append(f"| {os_name} | {count} |")
+    lines.append("")
+    lines.append("## Archive structure")
+    lines.append("")
+    lines.append("```")
+    lines.append(f"{timestamp}/")
+    lines.append("  <OS>/")
+    lines.append("    <Browser>/")
+    lines.append("      agents_1.txt")
+    lines.append("      agents_2.txt")
+    lines.append("      ...")
+    lines.append("```")
+    return "\n".join(lines)
+
+
+def cleanup_old_releases(releases_dir, keep=5):
+    if not releases_dir.exists():
+        return
+    zips = sorted(releases_dir.glob("*.zip"), key=lambda p: p.stat().st_mtime, reverse=True)
+    rars = sorted(releases_dir.glob("*.rar"), key=lambda p: p.stat().st_mtime, reverse=True)
+    for old in zips[keep:]:
+        old.unlink(missing_ok=True)
+    for old in rars[keep:]:
+        old.unlink(missing_ok=True)
+
+
 def main():
     now = datetime.now(timezone.utc)
     timestamp = now.strftime("%Y-%m-%d_%H-%M-%S")
 
     root_dir = Path(".")
+    releases_dir = root_dir / "releases"
 
     print(f"Retention: {KEEP_DAYS} days")
     cleanup_old_snapshots(root_dir, keep_days=KEEP_DAYS)
@@ -552,11 +662,31 @@ def main():
     print(f"Updating cumulative folders...")
     update_cumulative(root_dir, all_ua)
 
+    print(f"Building release archives...")
+    zip_path, rar_path, total_from_zip, os_counts = build_release_archives(run_dir, releases_dir, timestamp)
+
+    desc = build_release_description(
+        timestamp,
+        total_from_zip,
+        os_counts,
+        zip_path.name,
+        rar_path.name if rar_path else None,
+    )
+    desc_path = releases_dir / f"{timestamp}.md"
+    with open(desc_path, "w", encoding="utf-8") as f:
+        f.write(desc)
+
+    print(f"Cleaning old releases...")
+    cleanup_old_releases(releases_dir, keep=RELEASE_KEEP)
+
     print(f"Generated UA: {total_ua}")
     print(f"Files in snapshot: {total_files}")
+    print(f"Total UA in release: {total_from_zip}")
     print(f"OS count: {len(OPERATING_SYSTEMS)}")
     print(f"Browser count: {len(BROWSERS)}")
     print(f"Snapshot: {run_dir}")
+    print(f"ZIP: {zip_path}")
+    print(f"RAR: {rar_path if rar_path else 'not created'}")
 
 
 if __name__ == "__main__":
