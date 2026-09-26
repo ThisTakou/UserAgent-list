@@ -4,12 +4,10 @@
 
 [English](#english) | [Русский](#русский) | [Deutsch](#deutsch) | [Español](#español) | [中文](#中文) | [日本語](#日本語) | [Français](#français) | [Italiano](#italiano) | [Português](#português) | [한국어](#한국어)
 
-```
-💸 Поддержка проекта
-
-Gram (TON): UQCXJEpjngpV1bx5TYuYbdUOMzewSUSu4ruTy3kO0Qq4FDqW
-RU-Card:    2204321297371965
-```
+| 💸 Поддержка проекта |
+|:---|
+| **Gram (TON):** `UQCXJEpjngpV1bx5TYuYbdUOMzewSUSu4ruTy3kO0Qq4FDqW` |
+| **RU-Card:** `2204321297371965` |
 
 ---
 
