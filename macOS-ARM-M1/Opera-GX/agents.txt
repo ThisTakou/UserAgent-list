@@ -308,3 +308,6 @@ Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gec
 Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/108.0.0.0
 Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36 OPR/108.0.0.0
 Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 OPR/107.0.0.0
+Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/104.0.0.0
+Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0
+Mozilla/5.0 (Macintosh; ARM Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/104.0.0.0
