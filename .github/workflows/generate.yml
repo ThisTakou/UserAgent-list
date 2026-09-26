@@ -2,7 +2,7 @@ name: Generate User Agents
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
   push:
     branches: [ main ]
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
@@ -38,6 +38,31 @@ jobs:
       - name: Generate
         run: python scripts/generate.py
 
+      - name: Get snapshot filename
+        id: snapshot
+        run: |
+          LATEST=$(ls -t releases/*.md 2>/dev/null | head -1)
+          if [ -z "$LATEST" ]; then
+            echo "No snapshot file found"
+            exit 1
+          fi
+          NAME=$(basename "$LATEST" .md)
+          echo "name=$NAME" >> $GITHUB_OUTPUT
+          echo "Snapshot name: $NAME"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: snapshot-${{ github.run_id }}
+          name: Snapshot ${{ steps.snapshot.outputs.name }}
+          body_path: releases/${{ steps.snapshot.outputs.name }}.md
+          files: |
+            releases/${{ steps.snapshot.outputs.name }}.zip
+            releases/${{ steps.snapshot.outputs.name }}.rar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
       - name: Commit and push
         run: |
           git config --local user.email "action@github.com"
@@ -49,5 +74,4 @@ jobs:
           fi
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
           git commit -m "UA snapshot $TIMESTAMP"
-          git pull --rebase origin main
           git push origin main
