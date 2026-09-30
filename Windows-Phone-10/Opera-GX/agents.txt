@@ -372,3 +372,5 @@ Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like 
 Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/103.0.0.0
 Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 OPR/95.0.0.0
 Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 OPR/109.0.0.0
+Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/108.0.0.0
+Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/110.0.0.0
