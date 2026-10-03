@@ -1,0 +1,2 @@
+Mozilla/5.0 (X11; Linux Mint; Linux x86_64; rv:6.0) Gecko/20100101 Firefox/6.0
+Mozilla/5.0 (X11; Linux Mint; Linux x86_64; rv:5.0) Gecko/20100101 Firefox/5.0
