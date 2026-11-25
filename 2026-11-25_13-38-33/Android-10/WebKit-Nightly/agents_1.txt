@@ -1,0 +1,2 @@
+Mozilla/5.0 (Linux; Android 10) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/2024.0 Safari/605.1.15
+Mozilla/5.0 (Linux; Android 10) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/2025.0 Safari/605.1.15
