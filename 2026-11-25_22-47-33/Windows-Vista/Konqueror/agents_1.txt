@@ -1,0 +1,5 @@
+Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/605.1.15 (KHTML, like Gecko) Konqueror/23.0
+Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/605.1.15 (KHTML, like Gecko) Konqueror/24.0
+Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/605.1.15 (KHTML, like Gecko) Konqueror/20.0
+Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/605.1.15 (KHTML, like Gecko) Konqueror/22.0
+Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/605.1.15 (KHTML, like Gecko) Konqueror/21.0
